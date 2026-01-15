@@ -1,0 +1,144 @@
+.body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.navigation{
+    height: 100vh;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: 8px 0 0 -6px black;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+
+    /* ✅ Make sidebar sticky/fixed */
+    position: fixed; /* stays in place while scrolling */
+    z-index:0;   /* stays on top of content */
+}
+
+.navigation a {
+    color: black;
+    gap: 30px;
+    margin-top: 30px;
+    text-decoration: none;
+    padding: 12px 15px;
+    position: relative; /* remove sticky from links */
+}
+
+.navigation a:hover{
+    text-decoration: underline transparent;
+    text-decoration-color: brown;
+    background-size: 10%;
+    padding-left: 22px;
+    transition: 0.3s ease;
+    text-decoration-thickness: 5px;
+}
+
+.navigation a[href="pcParts.html"]{
+    text-decoration: underline transparent;
+    text-decoration-color: brown;
+    font-weight: bold;
+    text-decoration-thickness: 5px;
+}
+
+.logo{
+    height: 100px;
+    width: 150px;
+    margin-left: 20px;
+}    
+
+/* Dropdown wrapper */
+.dropdown {
+    position: relative;
+    margin-top: 30px;
+}
+
+/* Dropdown menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    min-width: 180px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 100;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.dropdown-content a:hover {
+    background-color: #f2f2f2;
+}
+
+/* Show on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.ilogo{
+    margin-left: 1530px;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    margin-top: 9px;
+}
+
+
+.content{
+    display: flex;
+    flex-direction: row;
+}
+
+.img{
+    height: 500px;
+    width: 800px;
+    margin-top: 200px;
+    margin-left: 350px;
+    border-radius: 10px;
+}
+
+h1{
+    font-size: 50px;
+    margin-top: 200px;
+    margin-left: 100px;
+}
+
+ol{
+    margin-top: 400px;
+    margin-left:-300px;
+    font-size: 30px;
+
+}
+
+.button a {
+    display: inline-block;
+    font-size: 20px;
+    background-color: aqua;
+    color: black;
+    padding: 10px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-top: 600px;
+    margin-left: -150px;
+}
+
+/* optional hover */
+.button a:hover {
+    background-color: #6fecec;
+}
+
+.price{
+    margin-top: 600px;
+    margin-left: -300px;
+    font-size: 30px;
+    text-shadow: 0 0 10px black;
+}

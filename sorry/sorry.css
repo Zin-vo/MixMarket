@@ -1,0 +1,16 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.sorry{
+    margin-top: 100px;
+
+}
+
+.sorry h1{
+    font-size: 30px;
+}
+
+.sorry h2{
+    font-size: 20px
+}

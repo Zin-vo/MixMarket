@@ -1,0 +1,205 @@
+*{
+    box-sizing: border-box;
+}
+
+.body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.navigation{
+    height: 100vh;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: 8px 0 0 -6px black;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+
+    /* ✅ Make sidebar sticky/fixed */
+    position: fixed; /* stays in place while scrolling */
+    z-index:0;   /* stays on top of content */
+}
+
+.navigation a {
+    color: black;
+    gap: 30px;
+    margin-top: 30px;
+    text-decoration: none;
+    padding: 12px 15px;
+    position: relative; /* remove sticky from links */
+}
+
+.navigation a:hover{
+    text-decoration: underline transparent;
+    text-decoration-color: brown;
+    background-size: 10%;
+    padding-left: 22px;
+    transition: 0.3s ease;
+    text-decoration-thickness: 5px;
+}
+
+.navigation a[href="shoes.html"]{
+    text-decoration: underline transparent;
+    text-decoration-color: brown;
+    font-weight: bold;
+    text-decoration-thickness: 5px;
+}
+
+.logo{
+    height: 100px;
+    width: 150px;
+    margin-left: 20px;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    margin-left: 300px;
+}
+
+
+.pcParts {
+    position: relative;
+    width: 300px;
+    margin-left: 100px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.pcParts img {
+    width: 380px;
+    height: 300px;
+    display: block;
+    box-shadow: 0 0 10px black;
+    margin: 30px;
+    margin-top: 200px;
+}
+
+.pcParts h2 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    margin: 0;
+    color: black;
+    font-size: 18px;
+    margin: 30px;
+}
+
+.pcParts h3 {
+    position: absolute;
+    bottom: 10px;
+    left: 80px;
+    margin: 0;
+    color: black;
+    font-size: 18px;
+    margin: 30px;
+    margin-left: 400px;
+}
+
+
+.img:hover{
+    box-shadow: 0 0 10px brown;
+}
+
+
+/* Dropdown wrapper */
+.dropdown {
+    position: relative;
+    margin-top: 30px;
+}
+
+/* Dropdown menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    min-width: 180px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 100;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.dropdown-content a:hover {
+    background-color: #f2f2f2;
+}
+
+/* Show on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.ilogo{
+    margin-left: 1530px;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    margin-top: 9px;
+}
+
+/*search box*/
+.search-box {
+  position: fixed;
+  margin-left: 1030px;
+  margin-top: 15px;
+}
+
+.search-box input {
+  width: 420px;
+  padding: 10px 16px;
+  border-radius: 999px; /* super soft round */
+  border: 2px solid #ddd;
+  font-size: 14px;
+  outline: none;
+  background: transparent;
+  transition: all 0.25s ease;
+}
+
+.search-box input::placeholder {
+  color: #000000;
+}
+
+.search-box input:focus {
+  border-color: #1da1f2;
+  box-shadow: 0 4px 12px rgba(29, 161, 242, 0.25);
+}
+
+/* 🔽 Search dropdown */
+#searchResults {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  width: 100%;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  overflow: hidden;
+  z-index: 999;
+}
+
+/* Result item */
+#searchResults a {
+  display: block;
+  padding: 10px 14px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #333;
+  transition: background 0.2s ease;
+}
+
+#searchResults a:hover {
+  background: #f5f7fa;
+}
+
