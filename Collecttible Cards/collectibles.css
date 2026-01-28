@@ -41,7 +41,7 @@
     text-decoration-thickness: 5px;
 }
 
-.navigation a[href="Collecttible Cards/collectibles.html"]{
+.navigation a[href="collectibles.html"]{
     text-decoration: underline transparent;
     text-decoration-color: brown;
     font-weight: bold;
@@ -253,5 +253,6 @@
 #searchResults a:hover {
   background: #f5f7fa;
 }
+
 
 
