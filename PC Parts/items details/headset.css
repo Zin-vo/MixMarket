@@ -36,6 +36,72 @@
     text-decoration-thickness: 5px;
 }
 
+/* Extra small phones (≤400px) */
+@media screen and (max-width: 400px) {
+
+  .navigation {
+    width: 80px;          /* shrink sidebar */
+    gap: 15px;
+  }
+
+  .navigation a {
+    font-size: 12px;
+    padding: 8px;
+    margin-top: 10px;
+  }
+
+  .logo {
+    width: 60px;
+    height: 50px;
+    margin-left: 10px;
+  }
+
+  .content {
+    flex-direction: column;   /* stack vertically */
+    margin-left: 0;           /* remove large offset */
+    align-items: center;
+  }
+
+  .img {
+    width: 90%;               /* scale image */
+    height: auto;
+    margin: 20px auto;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  ol {
+    font-size: 16px;
+    margin: 20px auto;
+    padding: 0;
+  }
+
+  .button a {
+    font-size: 16px;
+    padding: 8px 20px;
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+  }
+
+  .price {
+    font-size: 18px;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .ilogo {
+    position: static;         /* no fixed overlap */
+    margin: 10px auto;
+    display: block;
+  }
+}
+
+
 .navigation a[href="pcParts.html"]{
     text-decoration: underline transparent;
     text-decoration-color: brown;
